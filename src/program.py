@@ -65,7 +65,7 @@ while True:
             if event.code == ecodes.REL_Y:
                 if event.value <= -2:
                     atras() 
-                    adelante()
+                    
                 elif event.value >= 2:
                     adelante()
                 else:
