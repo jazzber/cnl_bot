@@ -63,10 +63,11 @@ while True:
         if event.type == ecodes.EV_REL:
             print("rel: " + str(event.value))
             if event.code == ecodes.REL_Y:
-                if event.value <= -1:
+                if event.value <= -2:
+                    atras() 
                     adelante()
-                elif event.value >= 1:
-                    atras()
+                elif event.value >= 2:
+                    adelante()
                 else:
                     parar()
             if event.code == ecodes.REL_X:
