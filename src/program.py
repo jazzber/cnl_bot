@@ -73,7 +73,7 @@ while True:
                 if event.value <= -2:
                     izquierda()
                 elif event.value >= 2:
-                    derecha()
+                    derecha() 
                 else:
                     parar()
 
